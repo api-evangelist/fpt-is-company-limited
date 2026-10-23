@@ -1,0 +1,13 @@
+generated: '2026-10-23'
+method: searched
+probe: true
+source: https://fpt-is.com/bao-mat/
+url: https://fpt-is.com/bao-mat/
+certifications:
+- ISO 27001
+- PCI DSS
+evidence:
+- source: https://fpt-is.com/bao-mat/
+  keywords:
+  - iso 27001
+  - pci dss

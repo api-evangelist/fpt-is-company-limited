@@ -1,23 +1,73 @@
 aid: fpt-is-company-limited
+
 name: FPT IS Company Limited
-description: 'FPT IS Company Limited is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.fpt-is.com/en/sites/3/Banner-Trang-chu_-1751603172.jpg
+
+description: 'FPT IS Company Limited is a Vietnamese digital transformation services provider offering a broad portfolio of IT solutions, platforms, and products across sectors such as government, finance, healthcare, and education. It delivers consulting, system integration, cloud services, AI, cybersecurity, and industry-specific applications, helping enterprises accelerate growth, improve efficiency, and innovate digitally.'
+
 url: https://raw.githubusercontent.com/api-evangelist/fpt-is-company-limited/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- IT Services
+- Digital Transformation
+- Cloud
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://fpt-is.com/bao-mat/
+- type: Hosts
+  url: hosts/fpt-is-company-limited-hosts.yml
+- type: Vendors
+  url: vendors/fpt-is-company-limited-vendors.yml
+- type: Newsroom
+  url: https://fpt-is.com/en/news
+- type: Login
+  url: https://fpt-is.com/en/login/
+- type: TrustCenter
+  url: security/fpt-is-company-limited-trust-center.yml
+- type: DomainSecurity
+  url: security/fpt-is-company-limited-domain-security.yml
 - type: Website
   url: https://fpt-is.com/en/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://fpt-is.com/en/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
